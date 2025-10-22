@@ -26,12 +26,13 @@ def checkin():
     token = request.args.get("token", "")
     row = get_user_by_token(token)
     if not row:
-        return "<h2 style='color:red;'>❌ QR non valido</h2>"
+        return "<h1 style='font-size: 48px; color: red;'>Token non trovato</h1>", 404
     nome, cognome, usato = row
     if usato:
-        return f"<h2 style='color:orange;'>⚠️ {nome} {cognome} ha già effettuato l'ingresso!</h2>"
+        return "<h1 style='font-size: 48px; color: orange;'>Token già usato</h1>", 400
     mark_used(token)
-    return f"<h2 style='color:green;'>✅ Benvenuto {nome} {cognome}!</h2>"
+    return f"<h1 style='font-size: 48px; color: green;'>Benvenuto {nome} {cognome}!</h1>"
+
 
 @app.route("/")
 def home():
