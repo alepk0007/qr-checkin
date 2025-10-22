@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import Flask, request
 import sqlite3, os
 
@@ -39,7 +39,7 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-=======
+
 from flask import Flask, request
 import sqlite3, os
 
@@ -80,4 +80,4 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
->>>>>>> 970cb7c15fda8c86555959791dee88b658b1796b
+

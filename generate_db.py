@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import sqlite3, secrets
 
 con = sqlite3.connect("db.sqlite")
@@ -26,7 +26,7 @@ for nome, cognome in partecipanti:
 con.commit()
 con.close()
 print("✅ Database creato con successo!")
-=======
+
 import sqlite3, secrets
 
 con = sqlite3.connect("db.sqlite")
@@ -54,4 +54,4 @@ for nome, cognome in partecipanti:
 con.commit()
 con.close()
 print("✅ Database creato con successo!")
->>>>>>> 970cb7c15fda8c86555959791dee88b658b1796b
+
