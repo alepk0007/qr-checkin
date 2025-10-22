@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 Flask==2.3
-=======
-Flask==2.3
->>>>>>> 970cb7c15fda8c86555959791dee88b658b1796b
 gunicorn==20.1
+qrcode==7.3
+pandas==2.1
+openpyxl==3.1
