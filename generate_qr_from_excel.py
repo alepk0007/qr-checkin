@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3, secrets, os, qrcode
 
 EXCEL_FILE = "partecipanti.xlsx"
-SERVER_URL = "https://tuo-server.onrender.com"
+SERVER_URL = "https://qr-checkin-a88x.onrender.com/"
 DB_FILE = "db.sqlite"
 QR_FOLDER = "qrcodes"
 
